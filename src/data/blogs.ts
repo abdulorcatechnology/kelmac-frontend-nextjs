@@ -26,7 +26,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately than ever, the role of Artificial Intelligence (AI) in the arts has become a pivotal conversation among creators and technologists alike...",
@@ -63,7 +63,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
@@ -99,7 +99,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
@@ -135,7 +135,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
@@ -171,7 +171,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
@@ -207,7 +207,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
@@ -243,7 +243,7 @@ export const blogItems: BlogPost[] = [
         category: "Food Safety",
         date: "24 March, 2024",
         postedBy: "John Doe",
-        title: "Incentivizing Success: Strategies forRewarding Employee Achievements",
+        title: "Incentivizing Success: Strategies for Rewarding Employee Achievements",
         excerpt: "Food safety is a critical concern in the food industry...",
         content: {
             introduction: "In an era where technology and creativity intertwine more intricately  than ever, the role of Artificial Intelligence (AI) in the arts has  become a pivotal conversation among creators and technologists alike. As  AI continues to evolve, it transforms not only how art is made but also  reshapes the very nature of creativity. This blog explores the dynamic  intersection of AI and art, examining its implications, benefits, and  the exciting possibilities ahead.",
