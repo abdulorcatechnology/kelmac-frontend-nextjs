@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+}
+
+@theme inline {
+	--color-primary: #182e4b;
+	--color-primary_light: #2f435d;
+	--color-secondary: #6488e6;
+	--color-accent: #e6cab0;
+	--color-body: #636363;
+
+	--color-light: #fafafa;
+	--color-lighter: #f8f9fa;
+	--color-border: rgba(224, 228, 238, 0.27);
+
+	/* Fonts */
+	--font-inter: var(--font-inter);
+	--font-inter-tight: var(--font-inter-tight);
+	--font-hedvig: var(--font-hedvig);
+
+	--font-size-xs: 0.75rem; /* 12px */
+	--font-size-sm: 0.875rem; /* 14px */
+	--font-size-base: 1rem; /* 16px */
+	--font-size-lg: 1.125rem; /* 18px */
+	--font-size-xl: 1.25rem; /* 20px */
+	--font-size-2xl: 1.5rem; /* 24px */
+	--font-size-3xl: 1.875rem; /* 30px */
+}
+
+@utility main-container {
+	@apply max-w-[1920px] mx-auto w-full px-4 md:px-8 lg:px-12 xl:px-24;
+}
+@utility primary-py {
+	@apply py-16;
+}
+@utility primary-pt {
+	@apply pt-16;
+}
+@utility primary-pb {
+	@apply pb-16;
+}
+@utility main-heading {
+	@apply md:text-[2.92rem] text-3xl font-hedvig leading-snug;
+}
+@utility sub-heading {
+	@apply relative pl-4 text-secondary before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:rounded-full before:bg-secondary;
+}
+@utility shadow-primary {
+	@apply shadow-[0_15px_30px_0_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.08)] transition-shadow duration-300;
+}
+body {
+	@apply text-body;
+	background: var(--background);
+	font-family: var(--font-inter-tight);
+}
+.tippy-content {
+	padding: 0px !important;
+}
+.tippy-box {
+	background-color: transparent !important;
+}
+.hero-swiper .swiper-pagination-bullet {
+	@apply bg-white opacity-65 rounded-full w-[18px] h-[18px];
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+	@apply bg-white opacity-100;
+}
+.bottom-pagination {
+	padding-bottom: 80px !important;
+}
+.bottom-pagination .swiper-pagination-bullet {
+	bottom: -20px !important;
+	@apply w-[15px] h-[15px] bg-[#D9D9D9]/65;
+}
+.bottom-pagination .swiper-pagination-bullet-active {
+	@apply bg-primary;
+}

@@ -1,0 +1,28 @@
+export function GetUserRoleName(roleId?: number): string {
+  console.log("Getting user role name for roleId:", roleId);
+  switch (roleId) {
+    case 1:
+      return "admin";
+    case 2:
+      return "learner";
+    case 3:
+      return "Consultant";
+    case 4:
+      return "corporate";
+    default:
+      return "unknown";
+  }
+}
+
+export function GetUserStatusName(statusId?: number): string {
+  switch (statusId) {
+    case 1:
+      return "Active";
+    case 2:
+      return "Blocked";
+    case 3:
+      return "Pending";
+    default:
+      return "unknown";
+  }
+}
