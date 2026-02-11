@@ -87,26 +87,31 @@ export default function Overview() {
 
 			<section>
 				<div className="main-container primary-py">
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-28">
-						<div className="space-y-8">
-							<h3 className="font-hedvig text-[32px] text-primary">
-								Our People & <br className="hidden md:block" /> Leadership
-							</h3>
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 md:gap-x-28 gap-y-8">
+						{/* Row 1: All headings share the same row height (md+) */}
+						<h3 className="font-hedvig text-[32px] text-primary leading-tight order-1 md:order-1">
+							Our People & <br className="hidden md:block" /> Leadership
+						</h3>
+						<h3 className="font-hedvig text-[32px] text-primary leading-tight order-3 md:order-2">
+							Purpose, mission & <br className="hidden md:block" /> values
+						</h3>
+						<h3 className="font-hedvig text-[32px] text-primary leading-tight order-5 md:order-3">
+							Our Aspiration
+						</h3>
+						{/* Row 2: All content blocks */}
+						<div className="space-y-4 order-2 md:order-4">
 							<p className="md:text-lg text-black">
 								We are defined by our people and are deeply committed to
 								creating a diverse and inclusive culture.
 							</p>
 							<LinkButton
-								href="about/our-founder/"
+								href="our-founder/"
 								text="Meet our leadership"
 								icon={<IconArrowRight size={16} />}
 								className="text-secondary hover:text-primary"
 							/>
 						</div>
-						<div className="space-y-8">
-							<h3 className="font-hedvig text-[32px] text-primary">
-								Purpose, mission & <br className="hidden md:block" /> values
-							</h3>
+						<div className="space-y-4 order-4 md:order-5">
 							<p className="md:text-lg text-black">
 								See the guiding principles that inform our long-term strategy as
 								well as how we serve our clients.
@@ -126,10 +131,7 @@ export default function Overview() {
 								/>
 							</div>
 						</div>
-						<div className="space-y-8">
-							<h3 className="font-hedvig text-[32px] text-primary">
-								Our Aspiration
-							</h3>
+						<div className="space-y-4 order-6 md:order-6">
 							<p className="md:text-lg text-black">
 								We help clients pursue sustainability, inclusion, and growth,
 								all at the same time.
