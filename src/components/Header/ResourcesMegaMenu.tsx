@@ -43,7 +43,7 @@ export default function ResourcesMegaMenu() {
                   <Link href={item.href} className={textClass}>
                     {item.title}
                   </Link>
-                  <p className={descClass}>{item.desc}</p>
+                  {/* <p className={descClass}>{item.desc}</p> */}
                 </div>
               </div>
             </li>

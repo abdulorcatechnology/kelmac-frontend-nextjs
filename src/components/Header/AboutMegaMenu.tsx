@@ -35,7 +35,7 @@ export default function AboutMegaMenu() {
                 <Icon className={iconClass} />
                 <div>
                   <h4 className={textClass}>{item.title}</h4>
-                  <p className={descClass}>{item.desc}</p>
+                  {/* <p className={descClass}>{item.desc}</p> */}
                 </div>
               </div>
             </Link>
@@ -50,7 +50,7 @@ export default function AboutMegaMenu() {
                 <Icon className={iconClass} />
                 <div>
                   <h4 className={textClass}>{item.title}</h4>
-                  <p className={descClass}>{item.desc}</p>
+                  {/* <p className={descClass}>{item.desc}</p> */}
                 </div>
               </div>
             </Link>
