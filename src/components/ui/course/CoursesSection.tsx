@@ -37,7 +37,7 @@ export default function CoursesSection({
   showCategoryFilters = true,
   showViewAllButton = true,
   maxCoursesToShow,
-  className = "primary-py bg-primary overflow-hidden rounded-3xl",
+  className = "primary-py bg-primary overflow-hidden rounded-3xl mx-4 md:mx-0",
   containerClassName = "main-container",
   onCourseClick,
   categories: propCategories = [
@@ -67,7 +67,7 @@ export default function CoursesSection({
       },
       {
         skip: !useApiCategories,
-      }
+      },
     );
 
   // Fetch courses from API
@@ -167,7 +167,7 @@ export default function CoursesSection({
               ))}
             </>
           }
-          headingClassName="text-white text-6xl"
+          headingClassName="text-white text-4xl md:text-6xl"
         />
 
         <div>
@@ -239,7 +239,9 @@ export default function CoursesSection({
                   color="transparent"
                   iconPosition="before"
                   iconclassName="bg-transparent !min-w-5 !min-h-5 sm:!min-w-6 sm:!min-h-6 md:!min-w-8 md:!min-h-8"
-                  icon={<Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />}
+                  icon={
+                    <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+                  }
                   onClick={handleSearchClick}
                 />
               )}
@@ -255,8 +257,8 @@ export default function CoursesSection({
                 {isLoading && categoriesLoading
                   ? "courses and categories"
                   : isLoading
-                  ? "courses"
-                  : "categories"}
+                    ? "courses"
+                    : "categories"}
                 ...
               </p>
             </div>
