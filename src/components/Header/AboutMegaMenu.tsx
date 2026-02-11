@@ -24,7 +24,7 @@ export default function AboutMegaMenu() {
 
       <h3 className="text-sm font-semibold text-[#6B8FD8] mb-6 uppercase tracking-wide">About Us</h3>
 
-      <div className="grid grid-cols-2 gap-x-12 gap-y-6 mb-8">
+      <div className="grid grid-cols-2 gap-x-8 gap-y-6 mb-8">
 
         {/* Menu Items */}
         {menuItems.slice(0, 3).map((item, i) => {
@@ -82,7 +82,7 @@ export default function AboutMegaMenu() {
               <li className="flex items-center gap-2 text-sm text-gray-700"><MapPin className="w-4 h-4 text-[#6B8FD8] flex-shrink-0" /> Delhi, India</li>
             </ul>
           </div>
-        </div>
+        </div>  
       </div>
 
     </div>
