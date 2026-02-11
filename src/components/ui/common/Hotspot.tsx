@@ -121,7 +121,7 @@ export function Hotspot({
 								>
 									<button
 										onClick={() => toggle(it.id, !!it.alwaysVisible)}
-										className="cursor-pointer flex items-center justify-center focus:outline-none transition-transform active:scale-95"
+										className="flex items-center justify-center focus:outline-none transition-transform active:scale-95"
 										style={{
 											width: hotspotSize,
 											height: hotspotSize,
