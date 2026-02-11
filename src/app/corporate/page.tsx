@@ -23,20 +23,22 @@ export default function Corporate() {
       title: "Consulting",
       description: "Effortlessly schedule a consultation to discuss your business needs and challenges. We streamline the process to get started quickly.",
       imageUrl: "/images/bg/corporate-card-bg.png",
+      href: "/corporate/consulting/",
     },
     {
       id: 2,
       title: "Auditing",
       description: "Comprehensive approach to effective internal auditing",
       imageUrl: "/images/bg/corporate-card-bg-2.png",
+      href: "/corporate/auditing/",
     },
     {
       id: 3,
       title: "Learning",
       description: "Building robust compliance management systems",
       imageUrl: "/images/bg/corporate-card-bg-3.png",
-    }
-
+      href: "/corporate/learning/",
+    },
   ];
 
   const [activeTab, setActiveTab] = useState<"auditing" | "consulting">("auditing");
@@ -98,6 +100,7 @@ export default function Corporate() {
                   </p>
 
                   <Button
+                    href={service.href}
                     className="mt-5 border-white"
                     iconclassName="bg-white"
                     spanclassName="w-78 text-center"
