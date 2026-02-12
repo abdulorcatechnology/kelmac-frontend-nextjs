@@ -65,7 +65,7 @@ export default function Corporate() {
               spanclassName="px-4"
               className="gap-0"
               text="Enquire now"
-              href="#"
+              href="/contact-us"
               icon={<IconArrowRight className="stroke-primary" />}
               color="white"
             />
