@@ -150,10 +150,10 @@ export default function Header() {
   };
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us", mega: "about" },
-    { href: "/courses", label: "Courses", mega: "courses" },
+    { href: "/about/overview", label: "About Us", mega: "about" },
+    { href: "/course/all-courses", label: "Courses", mega: "courses" },
     { href: "/corporate", label: "Corporate", mega: "corporate" },
-    { href: "/resources", label: "Resources", mega: "resources" },
+    { href: "/resources/latest-blogs", label: "Resources", mega: "resources" },
     { href: "/contact-us", label: "Contact" },
     ...(auth?.user?.id ? [{ href: "/dashboard", label: "Dashboard" }] : []),
   ];
@@ -249,7 +249,9 @@ export default function Header() {
                 height={24}
                 priority
               />
-              <span className="font-medium font-inter text-sm">USA</span>
+              <span className="font-medium font-inter text-sm hidden sm:block">
+                USA
+              </span>
             </button>
             {auth?.user?.id ? (
               <div className="flex items-center gap-2 md:gap-4">
