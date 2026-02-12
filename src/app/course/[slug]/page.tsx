@@ -347,7 +347,7 @@ export default function CoursePage() {
         </div>
       </section>
 
-      <section data-tabs-section>
+      <section data-tabs-section className="main-container primary-py">
         <Tabs
           tabs={[
             {
