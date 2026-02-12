@@ -15,6 +15,8 @@ import "swiper/css/pagination";
 import { Heading } from "@/components/ui/common/Heading";
 import { Tag } from "lucide-react";
 import { useGetAllCoursesQuery } from "@/store/api/courseApi";
+import { BundleCard } from "@/components/ui/course/Bundle-card";
+import { PromoSection } from "@/components/ui/course/PromoCard";
 
 export default function SuggestedCoursePage() {
   const {
@@ -47,78 +49,82 @@ export default function SuggestedCoursePage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 max-w-350 mx-auto relative z-10">
-          {coursesData?.data.map((course) => (
-            // <CourseCard
-            //   key={course.id}
-            //   category={course.category}
-            //   title={course.title}
-            //   description={course.description}
-            //   hours={course.hours}
-            //   lessons={course.lessons}
-            //   mode={course.mode}
-            //   imageUrl={course.imageUrl}
-            // />
-            <CourseCard
-              key={course._id}
-              category={course?.category?.name || "General"}
-              title={course.title}
-              description={course.description}
-              hours={course.snapshot?.totalDuration?.toString() || "N/A"}
-              lessons={course.snapshot?.totalLectures || 0}
-              mode={course.snapshot?.skillLevel || "Online"}
-              imageUrl={course.thumbnailUrl}
-              slug={course.slug}
-            />
-          ))}
+        <div className="main-container relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            {coursesData?.data.map((course) => (
+              // <CourseCard
+              //   key={course.id}
+              //   category={course.category}
+              //   title={course.title}
+              //   description={course.description}
+              //   hours={course.hours}
+              //   lessons={course.lessons}
+              //   mode={course.mode}
+              //   imageUrl={course.imageUrl}
+              // />
+              <CourseCard
+                key={course.id}
+                category={course?.category?.name || "General"}
+                title={course.title}
+                description={course.description}
+                hours={course.snapshot?.totalDuration?.toString() || "N/A"}
+                lessons={course.snapshot?.totalLectures || 0}
+                mode={course.snapshot?.skillLevel || "Online"}
+                imageUrl={course.thumbnailUrl}
+                slug={course.slug}
+              />
+            ))}
 
-          <div className="relative rounded-2xl p-6 flex flex-col justify-between text-white shadow-lg overflow-hidden shadow-[0_15px_30px_0_rgba(255,255,255,0.1)] hover:shadow-[15px_30px_30px_10px_rgba(100,136,230,0.5)] transition-shadow duration-300">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/bg/bundle-image.png')" }}
-            />
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <Heading heading="Bundle Offer"></Heading>
+            {/* <div className="relative rounded-2xl p-6 flex flex-col justify-between text-white overflow-hidden shadow-[0_15px_30px_0_rgba(255,255,255,0.1)] hover:shadow-[15px_30px_30px_10px_rgba(100,136,230,0.5)] transition-shadow duration-300">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/images/bg/bundle-image.png')",
+                }}
+              />
+              <div className="relative z-10 flex flex-col justify-between h-full">
+                <Heading heading="Bundle Offer"></Heading>
 
-              <div className="text-center">
-                <div className="flex flex-col items-center mb-6">
-                  <div className="flex items-center justify-center gap-3 flex-wrap">
-                    <span className="text-4xl font-bold text-white">
-                      $1,199
-                    </span>
-                    <span className="text-xl text-red-700 line-through">
-                      $1,497
-                    </span>
-                    <span className="bg-yellow-300 text-black px-3 py-2 rounded font-medium flex items-center gap-2">
-                      <Tag size={16} className="text-black" />
-                      Save $298
-                    </span>
+                <div className="text-center">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="flex items-center justify-center gap-3 flex-wrap">
+                      <span className="text-4xl font-bold text-white">
+                        $1,199
+                      </span>
+                      <span className="text-xl text-red-700 line-through">
+                        $1,497
+                      </span>
+                      <span className="bg-yellow-300 text-black px-3 py-2 rounded font-medium flex items-center gap-2">
+                        <Tag size={16} className="text-black" />
+                        Save $298
+                      </span>
+                    </div>
                   </div>
-                </div>
 
-                <Button
-                  className="w-full"
-                  iconclassName="bg-primary"
-                  spanclassName="px-4 w-full text-center"
-                  href="/courses"
-                  text="Enroll Now"
-                  color="white"
-                  size="sm"
-                  icon={<IconArrowRight className="stroke-white" />}
-                />
+                  <Button
+                    className="w-full"
+                    iconclassName="bg-primary"
+                    spanclassName="px-4 w-full text-center"
+                    href="/courses"
+                    text="Enroll Now"
+                    color="white"
+                    size="sm"
+                    icon={<IconArrowRight className="stroke-white" />}
+                  />
+                </div>
               </div>
-            </div>
+            </div> */}
+            <BundleCard />
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="bg-[url('/images/bg/bg.png')] bg-cover bg-center bg-no-repeat backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg">
         <div className="main-container">
-          <h2 className="text-4xl font-bold text-center mb-8 text-white drop-shadow-lg">
-            The Lead Auditor Certification Bundle
-          </h2>
-
-          <div className="bg-[url('/images/bg/bg.png')] bg-cover bg-center bg-no-repeat backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg">
+          <div className="pt-8 pb-8">
+            <h2 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">
+              The Lead Auditor Certification Bundle
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {courses.map((course) => (
                 <CourseCard
@@ -156,7 +162,11 @@ export default function SuggestedCoursePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* <section>
+        <div className="main-container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div
               className="relative rounded-2xl overflow-hidden text-white text-center flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat h-[420px] md:h-[480px]"
@@ -213,7 +223,8 @@ export default function SuggestedCoursePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <PromoSection />
     </main>
   );
 }
