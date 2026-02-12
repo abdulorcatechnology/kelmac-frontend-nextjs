@@ -85,7 +85,7 @@ export default function Home() {
         useApiCategories={true}
       />
 
-      <section className="bg-secondary bg-[url('/images/bg/Learner.png')] bg-no-repeat bg-cover bg-center rounded-3xl overflow-hidden">
+      <section className="bg-secondary bg-[url('/images/bg/Learner.png')] bg-no-repeat bg-cover bg-center rounded-3xl overflow-hidden mx-4 md:mx-0">
         <div className="main-container primary-py ">
           <div className="md:w-[60%] text-white space-y-8">
             <h6 className="sub-heading before:bg-white text-white">More</h6>
