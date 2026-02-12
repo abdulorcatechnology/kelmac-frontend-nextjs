@@ -1,27 +1,24 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 import { Heading } from "@/components/ui/common/Heading";
 import { IconArrowRight, IconPlus } from "@tabler/icons-react";
 import Button from "@/components/ui/button/Button";
 import Counter from "@/components/ui/common/Counter";
-import { ServiceCardSlider } from '@/components/ui/deliveryMethod/deliveryCard';
-import {
-  corporateServices,
-  serviceCardContent
-} from '@/data/corporate';
+import { ServiceCardSlider } from "@/components/ui/deliveryMethod/deliveryCard";
+import { corporateServices, serviceCardContent } from "@/data/corporate";
 import ApproachSlider from "@/components/ui/approach/approachSlider";
 import { useState } from "react";
 import NewsletterSection from "@/components/Sections/Newsletter/NewsletterSection";
 import { auditingApproach, consultingApproach } from "@/data/corporate";
-
 
 export default function Corporate() {
   const localCorporateServices = [
     {
       id: 1,
       title: "Consulting",
-      description: "Effortlessly schedule a consultation to discuss your business needs and challenges. We streamline the process to get started quickly.",
+      description:
+        "Effortlessly schedule a consultation to discuss your business needs and challenges. We streamline the process to get started quickly.",
       imageUrl: "/images/bg/corporate-card-bg.png",
       href: "/corporate/consulting/",
     },
@@ -41,22 +38,27 @@ export default function Corporate() {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState<"auditing" | "consulting">("auditing");
+  const [activeTab, setActiveTab] = useState<"auditing" | "consulting">(
+    "auditing",
+  );
 
   return (
     <main className="main">
-      <section className="relative bg-primary bg-[url('/images/bg/corporate_hero.png')] bg-right bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden rounded-3xl">
+      <section className="relative bg-primary bg-[url('/images/bg/corporate_hero.png')] bg-right bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden rounded-3xl mx-4 md:mx-0">
+        <div className="absolute inset-0 w-[80%] lg:w-[60%] bg-gradient-to-r from-primary from-[0%] via-primary/60 via-[85%] to-transparent to-[100%]" />
         <div className="main-container primary-py relative z-10">
           <div className="text-white md:w-[85%] lg:w-[60%]">
             <h1 className="text-4xl md:text-6xl font-hedvig leading-snug mb-8">
-              Elevate Your Skills with<br /> Globally Recognized Training
+              Elevate Your Skills with
+              <br /> Globally Recognized Training
             </h1>
             <p className="md:text-xl font-inter leading-relaxed mb-8">
-              We provide trusted auditing and training services that ensure your organization
-              meets compliance requirements with confidence. Our expert team focuses on
-              delivering actionable insights that drive continuous improvement and sustainable
-              success. Partner with us to strengthen your management systems and build lasting
-              quality assurance.
+              We provide trusted auditing and training services that ensure your
+              organization meets compliance requirements with confidence. Our
+              expert team focuses on delivering actionable insights that drive
+              continuous improvement and sustainable success. Partner with us to
+              strengthen your management systems and build lasting quality
+              assurance.
             </p>
 
             <Button
@@ -95,9 +97,7 @@ export default function Corporate() {
                   <h2 className="text-3xl lg:text-4xl font-inter-tight text-white leading-snug mb-3 break-words">
                     {service.title}
                   </h2>
-                  <p>
-                    {service.description}
-                  </p>
+                  <p>{service.description}</p>
 
                   <Button
                     href={service.href}
@@ -117,7 +117,7 @@ export default function Corporate() {
       </section>
 
       <section>
-        <div className="primary-py bg-[url('/images/bg/counter-bg.png')] bg-no-repeat bg-cover">
+        <div className="primary-py bg-[url('/images/bg/counter-bg.png')] bg-no-repeat bg-cover rounded-[4rem] md:rounded-none">
           <div className="main-container flex flex-col md:flex-row gap-12 justify-between">
             <Counter
               number={30}
@@ -165,10 +165,9 @@ export default function Corporate() {
           {...serviceCardContent.sliderConfig}
           className="mb-0"
           buttonText={serviceCardContent.buttonText}
-          onServiceClick={(service) => console.log('Service clicked:', service)}
+          onServiceClick={(service) => console.log("Service clicked:", service)}
         />
       </section>
-
 
       <section className="bg-secondary rounded-3xl overflow-hidden">
         <div className="primary-py main-container">
@@ -183,19 +182,21 @@ export default function Corporate() {
             <div className="flex bg-white/20 rounded-full p-1">
               <button
                 onClick={() => setActiveTab("auditing")}
-                className={`px-8 py-3 rounded-full font-medium transition-all ${activeTab === "auditing"
-                  ? "bg-white text-primary"
-                  : "text-white hover:text-primary hover:bg-white/10"
-                  }`}
+                className={`px-8 py-3 rounded-full font-medium transition-all ${
+                  activeTab === "auditing"
+                    ? "bg-white text-primary"
+                    : "text-white hover:text-primary hover:bg-white/10"
+                }`}
               >
                 Auditing
               </button>
               <button
                 onClick={() => setActiveTab("consulting")}
-                className={`px-8 py-3 rounded-full font-medium transition-all ${activeTab === "consulting"
-                  ? "bg-white text-primary"
-                  : "text-white hover:text-primary hover:bg-white/10"
-                  }`}
+                className={`px-8 py-3 rounded-full font-medium transition-all ${
+                  activeTab === "consulting"
+                    ? "bg-white text-primary"
+                    : "text-white hover:text-primary hover:bg-white/10"
+                }`}
               >
                 Consulting
               </button>
@@ -209,9 +210,9 @@ export default function Corporate() {
       <section className="main-container primary-py">
         <Heading
           heading="Learning Methodology"
-          subHeading='Methodology'
-          headingClassName='text-secondary'
-          subHeadingClassName='text-primary'
+          subHeading="Methodology"
+          headingClassName="text-secondary"
+          subHeadingClassName="text-primary"
         />
 
         <div className="flex justify-center mt-8">
@@ -237,7 +238,6 @@ export default function Corporate() {
         </div>
       </section>
       <NewsletterSection />
-
     </main>
   );
 }
