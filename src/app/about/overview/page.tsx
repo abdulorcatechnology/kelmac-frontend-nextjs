@@ -14,7 +14,7 @@ import ExploreItems from "@/app/about/overview/explore-items";
 export default function Overview() {
   return (
     <main className="main">
-      <section className="bg-primary bg-[url('/images/bg/about.png')] bg-center bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden rounded-3xl mx-4 md:mx-0">
+      <section className="bg-primary bg-[url('/images/bg/about.png')] bg-center bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden md:rounded-3xl">
         <div className="main-container primary-py">
           <div className="text-white md:w-[85%] lg:w-[62%]">
             <h1 className="text-4xl md:text-6xl font-hedvig leading-snug">
@@ -55,7 +55,7 @@ export default function Overview() {
         </div>
       </section>
 
-      <section className="rounded-3xl bg-primary overflow-hidden mx-4 md:mx-0">
+      <section className="md:rounded-3xl bg-primary overflow-hidden">
         <div className="main-container primary-py">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:min-h-69 p-5 rounded-[20px] bg-primary_light flex items-center justify-center">
@@ -120,7 +120,7 @@ export default function Overview() {
                 See the guiding principles that inform our long-term strategy as
                 well as how we serve our clients.
               </p>
-              <div className="space-y-4">
+              <div className="flex flex-col space-y-4">
                 <LinkButton
                   href="/about/mission-and-vision/"
                   text="Learn about our values"
@@ -140,7 +140,7 @@ export default function Overview() {
                 We help clients pursue sustainability, inclusion, and growth,
                 all at the same time.
               </p>
-              <div className="space-y-4">
+              <div className="flex flex-col space-y-4">
                 <LinkButton
                   href="/about/kelmac-group"
                   text="Explore a new kind of growth"
