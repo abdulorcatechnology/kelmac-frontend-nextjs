@@ -8,14 +8,14 @@ type CounterProps = {
   icon?: ReactNode;
   afterText?: string;
   label: string;
-  subLabel?: ReactNode;             // preferred prop
-  sublabel?: ReactNode;             // legacy fallback
+  subLabel?: ReactNode; // preferred prop
+  sublabel?: ReactNode; // legacy fallback
   duration?: number;
   className?: string;
   headingClassName?: string;
   labelClassName?: string;
-  subLabelClassName?: string;       // preferred className prop
-  sublabelClassName?: string;       // legacy fallback
+  subLabelClassName?: string; // preferred className prop
+  sublabelClassName?: string; // legacy fallback
 };
 
 export default function Counter(props: CounterProps) {
@@ -24,8 +24,8 @@ export default function Counter(props: CounterProps) {
     icon,
     afterText,
     label,
-    subLabel,            // preferred
-    sublabel,            // legacy
+    subLabel, // preferred
+    sublabel, // legacy
     duration = 2000,
     className,
     headingClassName = "",
@@ -53,7 +53,7 @@ export default function Counter(props: CounterProps) {
           setHasAnimated(true);
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     observer.observe(element);
@@ -79,21 +79,41 @@ export default function Counter(props: CounterProps) {
   const formattedCount = new Intl.NumberFormat("en-US").format(count);
 
   return (
-    <div ref={ref} className={cn("flex flex-col items-center text-center", className)}>
+    <div
+      ref={ref}
+      className={cn("flex flex-col items-center text-center", className)}
+    >
       <div className="relative">
-        <h2 className={cn("text-4xl md:text-6xl lg:text-8xl font-hedvig text-primary", headingClassName)}>
+        <h2
+          className={cn(
+            "text-4xl md:text-6xl lg:text-8xl font-hedvig text-primary text-center",
+            headingClassName,
+          )}
+        >
           {formattedCount}
-          {afterText && <span className="text-[80%] text-secondary">{afterText}</span>}
+          {afterText && (
+            <span className="text-[80%] text-secondary">{afterText}</span>
+          )}
         </h2>
 
-        {icon && <span className="text-secondary absolute -top-2 -right-10">{icon}</span>}
+        {icon && (
+          <span className="text-secondary absolute -top-2 -right-10">
+            {icon}
+          </span>
+        )}
       </div>
 
-      <p className={cn("mt-2 text-primary font-medium text-xl", labelClassName)}>{label}</p>
+      <p
+        className={cn("mt-2 text-primary font-medium text-xl", labelClassName)}
+      >
+        {label}
+      </p>
 
       {displayedSubLabel && (
         // default white text; additional/override classes can be passed via subLabelClassName or sublabelClassName
-        <p className={cn("mt-1 text-sm text-white", displayedSubLabelClass)}>{displayedSubLabel}</p>
+        <p className={cn("mt-1 text-sm text-white", displayedSubLabelClass)}>
+          {displayedSubLabel}
+        </p>
       )}
     </div>
   );
