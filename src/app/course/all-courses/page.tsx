@@ -16,6 +16,7 @@ import {
   useGetCategoriesQuery,
 } from "@/store/api/courseApi";
 import { Course, Category } from "@/types/course";
+import ViewCertificateButton from "@/components/ui/course/View-Certificate-Button";
 
 export default function AllCoursesPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -422,13 +423,7 @@ export default function AllCoursesPage() {
                 Certificate of Completion that is recognized globally
               </p>
               {/* Certificate page doesnt exist */}
-              <Button
-                spanclassName="px-4"
-                href="/course"
-                text="View Certificate"
-                color="primary"
-                icon={<IconArrowRight className="text-primary" />}
-              />
+              <ViewCertificateButton />
             </div>
 
             <div className="relative w-full lg:w-[120%] h-[400px] md:h-[500px] lg:h-[600px]">

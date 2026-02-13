@@ -34,6 +34,7 @@ import {
 } from "@/store/api/courseApi";
 import ConfirmBooking from "../bundle-offers/BookingConfirmationModal";
 import Methodology from "../Methodology";
+import ViewCertificateButton from "@/components/ui/course/View-Certificate-Button";
 
 export default function CoursePage() {
   const params = useParams();
@@ -426,13 +427,7 @@ export default function CoursePage() {
               Certificate of Completion that is recognized globally.
             </p>
             {/* Certificate page doesnt exist */}
-            <Button
-              spanclassName="px-4"
-              href="/course"
-              text="View Certificate"
-              color="primary"
-              icon={<IconArrowRight className="text-primary" />}
-            />
+            <ViewCertificateButton />
           </div>
         </div>
       </section>
