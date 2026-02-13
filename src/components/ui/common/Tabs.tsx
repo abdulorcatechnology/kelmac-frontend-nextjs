@@ -18,7 +18,7 @@ export function Tabs({ tabs, className = "" }: TabsProps) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id);
 
   const tabContainerClasses = cn(
-    "w-full text-center overflow-x-scroll snap-x snap-mandatory scroll-smooth",
+    "w-full text-center snap-x snap-mandatory scroll-smooth",
     className,
   );
 

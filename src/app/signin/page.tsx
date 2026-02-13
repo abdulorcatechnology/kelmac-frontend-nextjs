@@ -137,7 +137,7 @@ export default function SignInForm() {
           <p className="text-white text-sm text-center font-inter">
             Have issue with sign in?{" "}
             <Link
-              href="/contact"
+              href="/contact-us"
               className="underline hover:text-secondary transition-colors"
             >
               Contact Us
