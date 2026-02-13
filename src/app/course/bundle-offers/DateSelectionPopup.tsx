@@ -96,7 +96,7 @@ export default function DateSelectionPopup({
           id: course.id,
           discountedPrice: course.discountedPrice,
           price: course.price,
-        })
+        }),
       );
 
       localStorage.setItem("selectedSessionId", id);
@@ -179,7 +179,7 @@ export default function DateSelectionPopup({
         <div className="relative border-b border-gray-100 bg-white z-10 rounded-t-2xl h-[80px] flex items-center">
           <Heading
             heading="Please select the class date"
-            headingClassName="text-primary text-4xl text-center absolute left-1/2 -translate-x-1/2 w-[70%]"
+            headingClassName="text-primary text-xl md:text-4xl text-center absolute left-1/2 -translate-x-1/2 md:w-[70%]"
           />
 
           <button

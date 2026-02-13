@@ -34,6 +34,7 @@ import {
 } from "@/store/api/courseApi";
 import ConfirmBooking from "../bundle-offers/BookingConfirmationModal";
 import Methodology from "../Methodology";
+import ViewCertificateButton from "@/components/ui/course/View-Certificate-Button";
 
 export default function CoursePage() {
   const params = useParams();
@@ -164,7 +165,7 @@ export default function CoursePage() {
                 {error || "Course not found"}
               </h2>
               <Button
-                href="/courses"
+                href="/course"
                 text="Browse All Courses"
                 color="primary"
                 icon={<IconArrowRight className="text-primary" />}
@@ -347,7 +348,7 @@ export default function CoursePage() {
         </div>
       </section>
 
-      <section data-tabs-section>
+      <section data-tabs-section className="main-container primary-py">
         <Tabs
           tabs={[
             {
@@ -425,13 +426,8 @@ export default function CoursePage() {
               Upon successful completion, each learner shall receive a digital
               Certificate of Completion that is recognized globally.
             </p>
-            <Button
-              spanclassName="px-4"
-              href="/courses"
-              text="View Certificate"
-              color="primary"
-              icon={<IconArrowRight className="text-primary" />}
-            />
+            {/* Certificate page doesnt exist */}
+            <ViewCertificateButton />
           </div>
         </div>
       </section>

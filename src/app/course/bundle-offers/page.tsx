@@ -27,6 +27,7 @@ import BundleSyllabus from "./BundleSyllabus";
 import Faqs from "./BundleFaqs";
 
 import { coursesItems } from "@/data/home";
+import ViewCertificateButton from "@/components/ui/course/View-Certificate-Button";
 
 export default function Course() {
   const sessions = [
@@ -253,13 +254,8 @@ export default function Course() {
               Completion that is recognized
               <br className="hidden xl:block" /> globally
             </p>
-            <Button
-              spanclassName="px-4"
-              href="/courses"
-              text="View Certificate"
-              color="primary"
-              icon={<IconArrowRight className="text-primary" />}
-            />
+            {/* Certificate page doesnt exist */}
+            <ViewCertificateButton />
           </div>
         </div>
       </section>

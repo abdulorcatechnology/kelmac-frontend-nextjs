@@ -156,7 +156,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
     };
 
     const handleChange = (
-      e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+      e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
     ) => {
       const { name, value } = e.target;
 
@@ -214,9 +214,8 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
           status: { id: 1 },
         };
 
-        const registrationResponse = await registerInterpreter(
-          registrationData
-        ).unwrap();
+        const registrationResponse =
+          await registerInterpreter(registrationData).unwrap();
 
         // Reset form
         setFormData({
@@ -262,7 +261,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
               "Invalid registration data. Please check your information.",
           });
           toast.error(
-            "Invalid registration data. Please check your information."
+            "Invalid registration data. Please check your information.",
           );
         } else if (error?.status === 500) {
           setErrors({ general: "Server error. Please try again later." });
@@ -273,7 +272,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
               "Network error. Please check your connection and try again.",
           });
           toast.error(
-            "Network error. Please check your connection and try again."
+            "Network error. Please check your connection and try again.",
           );
         } else {
           setErrors({ general: "Registration failed. Please try again." });
@@ -300,7 +299,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Full Name + Last Name */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-black mb-1">
                 Full Name*
@@ -387,7 +386,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
           </div>
 
           {/* Company + Job Title */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-black mb-1">
                 Company Name*
@@ -475,7 +474,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
           </div>
 
           {/* Country + Industry */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-black mb-1">
                 Country*
@@ -524,7 +523,7 @@ const LearnerForm = forwardRef<LearnerFormRef, LearnerFormProps>(
         </form>
       </div>
     );
-  }
+  },
 );
 
 LearnerForm.displayName = "LearnerForm";

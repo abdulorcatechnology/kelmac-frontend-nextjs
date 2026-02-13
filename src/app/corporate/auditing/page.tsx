@@ -93,11 +93,11 @@ export default function Auditing() {
 
             <section>
                 <div className="main-container primary-py">
-                    <Heading
+                    {/* <Heading
                         subHeading="Approach"
                         heading="Enquire Now"
                         className="text-primary"
-                    />
+                    /> */}
                     <div>
                         <div className="relative group cursor-pointer min-h-[400px] md:min-h-[500px] justify-stretch bg-[url('/images/bg/enquire-now.png')] bg-cover bg-center bg-no-repeat rounded-4xl overflow-hidden">
                             <h2 className="absolute bottom-0 left-0 transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 pointer-events-auto group-hover:pointer-events-none px-5 md:px-10 py-16 text-white font-hedvig text-4xl md:text-5xl lg:text-[64px] w-full bg-gradient-to-b from-transparent via-transparent/0 via-[0%] to-primary">

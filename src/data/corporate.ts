@@ -157,14 +157,4 @@ export const consultingApproach = [
         href: "/auditing/transforming"
 
     },
-    {
-        id: 5,
-        title: "Improve",
-        description:
-            "Embed metrics, lessons learned, and governance so the system keeps delivering value.",
-        image: "/images/bg/approach-1.png",
-        knowMore: true,
-        href: "/auditing/transforming"
-
-    },
 ];

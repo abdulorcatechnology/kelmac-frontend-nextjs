@@ -28,6 +28,7 @@ import QuestionsModal from "@/components/ui/questions/QuestionsModal";
 import type { FormData } from "@/data/questionTypes";
 import { useState, useRef, useEffect } from "react";
 import ConfirmBooking from "./bundle-offers/BookingConfirmationModal";
+import ViewCertificateButton from "@/components/ui/course/View-Certificate-Button";
 
 export default function Course() {
   const sessions: CourseSessionProps[] = [
@@ -349,13 +350,8 @@ export default function Course() {
               Upon successful completion, each learner shall receive a digital
               Certificate of Completion that is recognized globally.
             </p>
-            <Button
-              spanclassName="px-4"
-              href="/courses"
-              text="View Certificate"
-              color="primary"
-              icon={<IconArrowRight className="text-primary" />}
-            />
+            {/* Certificate page doesnt exist */}
+            <ViewCertificateButton />
           </div>
         </div>
       </section>

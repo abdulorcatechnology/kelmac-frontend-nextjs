@@ -37,7 +37,7 @@ export default function CoursesSection({
   showCategoryFilters = true,
   showViewAllButton = true,
   maxCoursesToShow,
-  className = "primary-py bg-primary overflow-hidden rounded-3xl",
+  className = "primary-py bg-primary overflow-hidden rounded-3xl mx-4 md:mx-0",
   containerClassName = "main-container",
   onCourseClick,
   categories: propCategories = [
@@ -67,7 +67,7 @@ export default function CoursesSection({
       },
       {
         skip: !useApiCategories,
-      }
+      },
     );
 
   // Fetch courses from API
@@ -167,7 +167,7 @@ export default function CoursesSection({
               ))}
             </>
           }
-          headingClassName="text-white text-6xl"
+          headingClassName="text-white text-4xl md:text-6xl"
         />
 
         <div>
@@ -215,31 +215,33 @@ export default function CoursesSection({
 
           {/* Category Filters */}
           {showCategoryFilters && !isSearchActive && (
-            <div className="flex flex-wrap gap-3 md:gap-0 items-center justify-center mb-18">
+            <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 items-center justify-center mb-8 md:mb-12 lg:mb-16 px-4 sm:px-0">
               {categories.map((category) => (
-                <>
-                  <Button
-                    key={category.key}
-                    size="lg"
-                    text={category.label}
-                    color={
-                      activeCategory === category.value
-                        ? "white"
-                        : "semitransparent"
-                    }
-                    onClick={() => handleCategoryClick(category.value)}
-                  />
-                </>
+                <Button
+                  key={category.key}
+                  size="lg"
+                  text={category.label}
+                  className="!px-3 !py-2 !text-xs sm:!px-5 sm:!py-3 sm:!text-base md:!px-7 md:!py-4 md:!text-xl shrink-0"
+                  color={
+                    activeCategory === category.value
+                      ? "white"
+                      : "semitransparent"
+                  }
+                  onClick={() => handleCategoryClick(category.value)}
+                />
               ))}
 
               {showSearchBar && (
                 <Button
                   size="lg"
                   text="Search Courses"
+                  className="!px-3 !py-2 !text-xs sm:!px-5 sm:!py-3 sm:!text-base md:!px-7 md:!py-4 md:!text-xl shrink-0"
                   color="transparent"
                   iconPosition="before"
-                  iconclassName="bg-transparent"
-                  icon={<Search />}
+                  iconclassName="bg-transparent !min-w-5 !min-h-5 sm:!min-w-6 sm:!min-h-6 md:!min-w-8 md:!min-h-8"
+                  icon={
+                    <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+                  }
                   onClick={handleSearchClick}
                 />
               )}
@@ -255,8 +257,8 @@ export default function CoursesSection({
                 {isLoading && categoriesLoading
                   ? "courses and categories"
                   : isLoading
-                  ? "courses"
-                  : "categories"}
+                    ? "courses"
+                    : "categories"}
                 ...
               </p>
             </div>

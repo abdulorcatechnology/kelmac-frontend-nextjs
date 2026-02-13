@@ -169,14 +169,14 @@ const QuestionsModal: React.FC<QuestionsModalProps> = ({
         </div>
 
         <div
-          className="flex rounded-3xl ml-2 mr-2 mb-2 overflow-hidden"
+          className="flex flex-col md:flex-row rounded-3xl ml-2 mr-2 mb-2 overflow-hidden p-2 md:p-4"
           style={{ backgroundColor: "#6488E6" }}
         >
           <div className="w-1/3 py-8 px-4">
             <Sidebar activeIndex={currentStep - 1} />
           </div>
 
-          <div className="w-2/3 ml-2 mr-2 mb-2 mt-2 flex flex-col">
+          <div className="w-full md:w-2/3 md:ml-2 md:mr-2 mb-2 mt-2 flex flex-col">
             <div className="bg-white p-8 rounded-3xl">
               {currentStep === 1 && (
                 <>
@@ -187,7 +187,7 @@ const QuestionsModal: React.FC<QuestionsModalProps> = ({
 
                   <Heading
                     heading="Which curriculum are you interested in?"
-                    headingClassName="text-primary text-3xl text-left"
+                    headingClassName="text-primary text-xl md:text-3xl text-left"
                   />
 
                   <div className="space-y-6">

@@ -18,14 +18,17 @@ export function Heading({
   heading = "Delivering sustainable, societal impact & process based solutions",
   subHeadingClassName = "",
   headingClassName = "",
-  dotColor, 
+  dotColor,
 }: HeadingProps) {
   const classes = cn("text-center mb-10", className);
   const wrapperClasses = cn(
     "flex items-center justify-center mb-4",
-    wrapperClassName
+    wrapperClassName,
   );
-  const subHeadingClasses = cn("sub-heading flex items-center gap-2", subHeadingClassName);
+  const subHeadingClasses = cn(
+    "sub-heading flex items-center gap-2",
+    subHeadingClassName,
+  );
   const headingClasses = cn("main-heading", headingClassName);
 
   return (

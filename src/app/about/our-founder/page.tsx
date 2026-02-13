@@ -119,7 +119,7 @@ export default function OurFoudner() {
 								iconclassName="bg-primary"
 								spanclassName="px-4"
 								className="gap-1"
-								href="/courses"
+								href="https://documents1.worldbank.org/curated/en/450921587054767474/pdf/Food-Safety-Handbook-A-Practical-Guide-for-Building-a-Robust-Food-Safety-Management-System.pdf"
 								text="Read the book"
 								color="white"
 								icon={<IconArrowRight className="text-white" />}

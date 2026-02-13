@@ -14,10 +14,10 @@ export default function Contact() {
               Contact with us
             </h1>
             <p className="md:text-xl font-normal text-white/90 mt-8">
-              Please take the time to complete the following form and provide us with
-              as much information as you are able to ensure we can deal with your
-              request as promptly and accurately as we can. We look forward to
-              hearing from you! Thank you for contacting Us!
+              Please take the time to complete the following form and provide us
+              with as much information as you are able to ensure we can deal
+              with your request as promptly and accurately as we can. We look
+              forward to hearing from you! Thank you for contacting Us!
             </p>
           </div>
         </div>
@@ -110,7 +110,9 @@ export default function Contact() {
                     className="w-6 h-6 md:w-8 md:h-8 object-contain flex-shrink-0"
                   />
                   <div>
-                    <div className="text-sm md:text-base text-[#94A3B8]">Phone No:</div>
+                    <div className="text-sm md:text-base text-[#94A3B8]">
+                      Phone No:
+                    </div>
                     <div className="text-sm md:text-base">+353 61 491224</div>
                   </div>
                 </div>
@@ -123,8 +125,12 @@ export default function Contact() {
                     className="w-6 h-6 md:w-8 md:h-8 object-contain flex-shrink-0"
                   />
                   <div>
-                    <div className="text-sm md:text-base text-[#94A3B8]">Email ID:</div>
-                    <div className="text-sm md:text-base break-all">info@kelmacgroup.com</div>
+                    <div className="text-sm md:text-base text-[#94A3B8]">
+                      Email ID:
+                    </div>
+                    <div className="text-sm md:text-base break-all">
+                      info@kelmacgroup.com
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -136,16 +142,20 @@ export default function Contact() {
                     className="w-6 h-6 md:w-8 md:h-8 object-contain mt-1 flex-shrink-0"
                   />
                   <div>
-                    <div className="text-sm md:text-base text-[#94A3B8]">Registered Office Address</div>
+                    <div className="text-sm md:text-base text-[#94A3B8]">
+                      Registered Office Address
+                    </div>
                     <div className="text-sm md:text-base leading-relaxed">
-                      Business Edge Limited T/A Kelmac Group®, Old Windmill, Office Suites, Lower Gerald, Griffin Street Limerick, V94 YRD7, Dublin, Ireland
+                      Business Edge Limited T/A Kelmac Group®, Old Windmill,
+                      Office Suites, Lower Gerald, Griffin Street Limerick, V94
+                      YRD7, Dublin, Ireland
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Map Section */}
-              <div className="mt-6 md:mt-8 rounded-2xl overflow-hidden relative group -mx-2 md:-mx-4 lg:-mx-3 -mb-6 md:-mb-8 lg:-mb-3">
+              <div className="mt-6 md:mt-8 rounded-2xl overflow-hidden relative group -mx-2 md:-mx-4 lg:-mx-3 -mb-6 md:-mb-8 lg:-mb-3 pb-4">
                 <div className="relative w-full h-[200px] md:h-[240px]">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.8754436967313!2d-8.630720323968403!3d52.66030597983404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c7c20f20a27%3A0x3b05c9374c8d661e!2sKelmac%20Group%20Limited!5e0!3m2!1sen!2sie!4v1695481234567!5m2!1sen!2sie"
@@ -166,7 +176,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

@@ -32,6 +32,9 @@ export default function BundleSlider({ bundles }: BundleSliderProps) {
           nextEl: ".bundle-next",
         }}
         breakpoints={{
+          200: {
+            slidesPerView: 1,
+          },
           640: {
             slidesPerView: 1,
           },

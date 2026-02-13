@@ -11,6 +11,7 @@ import {
 	IconDesign,
 	IconCertificate,
 	IconCirclesFour,
+	IconBookFilled,
 } from "@/components/icons/icons";
 
 const slides = [
@@ -33,7 +34,7 @@ const slides = [
 			"pilot, train, and coach; run live audits and management reviews to prove the design.",
 	},
 	{
-		icon: <IconCertificate />,
+		icon: <IconBookFilled />,
 		title: "Assure",
 		description:
 			"internal/supplier audits, pre-assessment, and readiness scoring aligned to certification timelines.",

@@ -96,7 +96,7 @@ export default function WebinarsPage() {
 
   return (
     <main>
-      <section className="bg-primary bg-[url('/images/bg/whitepaper.png')] bg-center bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden rounded-3xl">
+      <section className="bg-primary bg-[url('/images/bg/whitepaper.png')] bg-center bg-cover bg-no-repeat lg:min-h-128 flex flex-col items-start justify-center overflow-hidden">
         <div className="main-container primary-py">
           <div className="text-white md:w-[85%] lg:w-[62%]">
             <h1 className="text-4xl md:text-6xl font-hedvig leading-snug">
