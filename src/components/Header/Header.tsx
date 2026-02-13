@@ -239,7 +239,7 @@ export default function Header() {
               })}
             </nav>
           </div>
-          <div className="col-span-2 lg:col-span-2 flex items-center justify-end gap-4">
+          <div className="col-span-3 lg:col-span-2 gap-2 flex items-center justify-end lg:gap-4">
             <button className="px-3 py-2 bg-gray-50 border border-gray-100 flex gap-2 rounded-lg items-center">
               <Image
                 src="/images/flags/us.png"
@@ -256,7 +256,7 @@ export default function Header() {
             {auth?.user?.id ? (
               <div className="flex items-center gap-2 md:gap-4">
                 {/* Notifications Dropdown */}
-                <div ref={notificationRef} className="relative">
+                {/* <div ref={notificationRef} className="relative">
                   <button
                     onClick={() => {
                       setNotificationOpen(!notificationOpen);
@@ -271,10 +271,10 @@ export default function Header() {
                         {unreadCount > 9 ? "9+" : unreadCount}
                       </span>
                     )}
-                  </button>
+                  </button> */}
 
-                  {/* Notifications Dropdown Menu */}
-                  {notificationOpen && (
+                {/* Notifications Dropdown Menu */}
+                {/* {notificationOpen && (
                     <div className="absolute right-0 mt-3 w-96 bg-white border border-gray-200 rounded-xl shadow-2xl z-50 overflow-hidden">
                       <div className="flex items-center justify-between p-4 bg-linear-to-r from-gray-50 to-white border-b border-gray-200">
                         <h3 className="font-bold text-gray-900 text-lg">
@@ -383,8 +383,8 @@ export default function Header() {
                         </Link>
                       </div>
                     </div>
-                  )}
-                </div>
+                  )}  
+                </div> */}
 
                 {/* User Menu Dropdown */}
                 <div ref={userMenuRef} className="relative">
@@ -448,13 +448,13 @@ export default function Header() {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button
+                {/* <button
                   id="mobile_btn"
                   className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
                   title="Mobile Menu"
                 >
                   <i className="fas fa-bars text-lg" />
-                </button>
+                </button> */}
               </div>
             ) : (
               <Button
