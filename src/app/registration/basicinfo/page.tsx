@@ -32,7 +32,7 @@ const dummyCourse: Course = {
   couponDiscount: 50,
 };
 
-export default function BasicInfo(course:any) {
+export default function BasicInfo(course: any) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedSession, setSelectedSession] = useState(course.date);
@@ -93,7 +93,7 @@ export default function BasicInfo(course:any) {
 
   return (
     <div className="min-h-screen bg-white relative">
-      <section className="bg-primary bg-[url('/images/bg/basicinfo.png')] bg-center bg-cover bg-no-repeat lg:min-h-50 flex flex-col items-start justify-center relative rounded-3xl">
+      <section className="bg-primary bg-[url('/images/bg/basicinfo.png')] bg-center bg-cover bg-no-repeat lg:min-h-50 flex flex-col items-start justify-center relative md:rounded-3xl">
         <div className="main-container primary-py">
           <div className="text-white md:w-[85%] lg:w-[62%]">
             <h1 className="text-4xl md:text-6xl font-hedvig leading-snug">
@@ -159,7 +159,7 @@ export default function BasicInfo(course:any) {
         </div>
       </section>
 
-      <section>
+      <section className="mx-4 md:mx-0">
         <Stepper currentStep={1} />
         <div className="max-w-6xl mx-auto mt-8 flex flex-col lg:flex-row">
           <div className="w-full lg:w-2/3 pr-0 lg:pr-8 mb-6 lg:mb-0">
