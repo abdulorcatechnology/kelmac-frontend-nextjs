@@ -349,9 +349,10 @@ export default function Course() {
               Upon successful completion, each learner shall receive a digital
               Certificate of Completion that is recognized globally.
             </p>
+            {/* Certificate page doesnt exist */}
             <Button
               spanclassName="px-4"
-              href="/courses"
+              href="/course"
               text="View Certificate"
               color="primary"
               icon={<IconArrowRight className="text-primary" />}

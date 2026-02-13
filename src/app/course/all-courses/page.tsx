@@ -241,8 +241,8 @@ export default function AllCoursesPage() {
                   {coursesLoading && categoriesLoading
                     ? "courses and categories"
                     : coursesLoading
-                    ? "courses"
-                    : "categories"}
+                      ? "courses"
+                      : "categories"}
                   ...
                 </p>
               </div>
@@ -421,14 +421,13 @@ export default function AllCoursesPage() {
                 Upon successful completion, each Learner shall receive a digital
                 Certificate of Completion that is recognized globally
               </p>
-
+              {/* Certificate page doesnt exist */}
               <Button
-                size="lg"
+                spanclassName="px-4"
+                href="/course"
                 text="View Certificate"
-                icon={<IconArrowRight className="stroke-primary" />}
                 color="primary"
-                iconclassName="bg-white"
-                spanclassName="px-1"
+                icon={<IconArrowRight className="text-primary" />}
               />
             </div>
 

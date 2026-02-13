@@ -164,7 +164,7 @@ export default function CoursePage() {
                 {error || "Course not found"}
               </h2>
               <Button
-                href="/courses"
+                href="/course"
                 text="Browse All Courses"
                 color="primary"
                 icon={<IconArrowRight className="text-primary" />}
@@ -425,9 +425,10 @@ export default function CoursePage() {
               Upon successful completion, each learner shall receive a digital
               Certificate of Completion that is recognized globally.
             </p>
+            {/* Certificate page doesnt exist */}
             <Button
               spanclassName="px-4"
-              href="/courses"
+              href="/course"
               text="View Certificate"
               color="primary"
               icon={<IconArrowRight className="text-primary" />}

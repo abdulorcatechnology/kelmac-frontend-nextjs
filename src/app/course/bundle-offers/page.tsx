@@ -253,9 +253,10 @@ export default function Course() {
               Completion that is recognized
               <br className="hidden xl:block" /> globally
             </p>
+            {/* Certificate page doesnt exist */}
             <Button
               spanclassName="px-4"
-              href="/courses"
+              href="/course"
               text="View Certificate"
               color="primary"
               icon={<IconArrowRight className="text-primary" />}
