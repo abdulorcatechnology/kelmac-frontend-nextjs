@@ -33,7 +33,7 @@ export function Tabs({ tabs, className = "" }: TabsProps) {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={cn(
-                  "cursor-pointer px-3 py-1.5 md:py-6 md:px-16 md:text-xl font-medium transition rounded-full",
+                  "cursor-pointer px-2 py-1.5 md:py-6 md:px-16 text-xs md:text-xl font-medium transition rounded-full",
                   isActive ? "bg-primary text-white" : "hover:text-black ",
                 )}
               >
